@@ -3,7 +3,7 @@ attempts = [] # a list of all the wrong attempts
 def start():
     pswd = input('password: ')
     hashed_string = hashlib.sha256(pswd.encode('utf-8')).hexdigest() #creates a hash of the input (pswd)
-    hashed_password = '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8' #this is the hash of the password
+    hashed_password = '' #this is the hash of the password
     if hashed_string == hashed_password: #if the hash of the input is equal to the hash of the password then print correct password
         print("correct password")
         #here you can add any command you want(remeber the indentation)
