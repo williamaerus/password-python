@@ -11,6 +11,7 @@ you may need to install the _hashlib_ library you can install it with this comma
 
 **to add your own commands if the password is right**
 you can add any command after line  between line 9 `#here you can add any command you want(remeber the indentation)` and line 12 `else:` (you can add lines of course, but don't change any code that was already written)
+
 **to add your own commands if the password is wrong**
 to do so delete line 20 of the script `close()` and add any command you want after it
 
@@ -39,3 +40,5 @@ the script is gonna ask for the password by default everytime you start your scr
 as you know there is no way to reverse engineer a hash, so the script has the hash of the correct password stored in line 6.
 
 to check if the password is correct it hashes the input (the password that your entered) and then check if the hash of the input is equal to the hash of the correct password, if it is correct it's gonna do whatever it's written in the code, if the password is incorrect it's gonna add one element to the list of wrong passwords and ask for the password again, once the list of wrong passwords contains 4 elements, the script is gonna kill himself by default or do whatever is written in the code.
+
+every line of code is commented, so you can see what any line of code does
